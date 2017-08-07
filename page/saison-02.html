@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <script src="lib/jquery.upvote.js"></script>
+    <link rel="stylesheet" href="lib/jquery.upvote.css">
+
+    <title></title>
+    <script type="text/javascript">
+        function gen(target, cssClass, params) {
+            var obj = $('#templates .upvote').clone();
+            obj.addClass(cssClass);
+            $(target).append(obj);
+            return obj.upvote(params);
+        }
+
+        $(function() {
+                function gen_examples(params) {
+                    gen('#examples', '', params);
+                };
+                gen_examples({count: 5});
+        });
+    </script>
+  </head>
+  <body>
+
+
+<div class="container">
+  <nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <a class="navbar-brand" href="index.html">Sauvé pas le Gong</a>
+     </div>
+     <ul class="nav navbar-nav">
+       <li><a href="intro.html">Introduction</a></li>
+       <li><a href="saison-01.html">Page 1</a></li>
+       <li class="active"><a href="saison-02.html">Page 2</a></li>
+     </ul>
+   </div>
+  </nav>
+  <div class="jumbotron">
+    <h1>Sauvé par le Gong</h1>
+      <h2>SAISON 2</h2>
+
+        <h3>Ep. 1: Le bal</h3>
+        <div id="topic" class="upvote" style="float:left; margin:10px 15px 15px 10px">
+          <a class="upvote"></a>
+          <span class="count">100</span>
+          <a class="downvote"></a>
+          <a class="star"></a>
+        </div>
+        <p>
+        A l'approche du bal de Bayside, Zack et Slater demandent à Kelly de choisir une bonne fois pour toutes entre eux deux. Après une nuit de réflexion, elle décide d'y aller avec Zack. Malheureusement peu de temps après elle apprend que son père a été licencié. N'ayant plus le coeur à la fête, elle renonce au bal...
+        </p>
+    </div>
+  </div>
+</body>
+</html>
