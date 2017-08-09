@@ -28,12 +28,12 @@ var scenario = {
   zero: {
     image: "img/Saved_by_the_Bell_logo.png",
     text: "Welcome to Bayside",
-    buttons:[["start","scenario.one"]]
+    buttons: [["Start","scenario.one"]]
   },
   one: {
     image: "img/ct-saved-by-the-bell-max-restaurant-chicago-review.jpg",
     text: "You finnaly decided to go to the BAL",
-    buttons:[["Yes","scenario.two"],["No","scenario.three"]]
+    buttons: [["Yes","scenario.two"],["No","scenario.three"]]
   },
   two: {
     image: "img/13301388_10153643416516728_2245964874394631818_o.jpg",
@@ -42,7 +42,8 @@ var scenario = {
   },
   three: {
     image: "img/tumblr_mraagiwSpe1qzol4do1_1280.png",
-    text: "You win"
+    text: "You win",
+    buttons: [["Play again","scenario.one"]]
   },
     four: {
     image: "img/13329482_10153643416551728_1917168832099222692_o.jpg",
@@ -51,6 +52,7 @@ var scenario = {
   },
     five: {
     image: "img/firefox_2017-08-08_00-20-28.png",
-    text: "TO BE CONTINUED..."
+    text: "TO BE CONTINUED...",
+    buttons: [["Play again","scenario.one"]]
   }
 };
