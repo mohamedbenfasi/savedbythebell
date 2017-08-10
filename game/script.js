@@ -38,7 +38,7 @@ var scenario = {
   two: {
     image: "img/13301388_10153643416516728_2245964874394631818_o.jpg",
     text: "Your find a message saying to go to Max. What do you want to do?",
-    buttons: [["Go to Max", "scenario.four"],["Turn and go to class", "scenario.three"]]
+    buttons: [["Go to Max", "scenario.four"],["Turn and go to class", "scenario.three"], ["Think", "scenario.six"]]
   },
   three: {
     image: "img/tumblr_mraagiwSpe1qzol4do1_1280.png",
@@ -53,6 +53,11 @@ var scenario = {
     five: {
     image: "img/firefox_2017-08-08_00-20-28.png",
     text: "TO BE CONTINUED...",
+    buttons: [["Play again","scenario.zero"]]
+  },
+    six: {
+    image: "img/3396-4039.gif",
+    text: "https://www.youtube.com/watch?v=hj7ZAgafenw",
     buttons: [["Play again","scenario.zero"]]
   }
 };
