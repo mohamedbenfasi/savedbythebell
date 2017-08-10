@@ -38,7 +38,7 @@ var scenario = {
   two: {
     image: "img/13301388_10153643416516728_2245964874394631818_o.jpg",
     text: "Your find a message saying to go to Max. What do you want to do?",
-    buttons: [["Turn and go to class", "scenario.three"],["Go to Max", "scenario.four"]]
+    buttons: [["Go to Max", "scenario.four"],["Turn and go to class", "scenario.three"]]
   },
   three: {
     image: "img/tumblr_mraagiwSpe1qzol4do1_1280.png",
@@ -47,7 +47,7 @@ var scenario = {
   },
     four: {
     image: "img/13329482_10153643416551728_1917168832099222692_o.jpg",
-    text: "something",
+    text: "You meet Kelly and Jessica",
     buttons: [["follow Kelly", "scenario.five"],["follow Jessica", "scenario.five"]]
   },
     five: {
